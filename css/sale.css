@@ -1,0 +1,71 @@
+/* prsweekOffer */
+
+#prsPratik {
+    margin: auto;
+    width: 90%;
+}
+#prsFilter {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+#prsFilter>select {
+    font-size: 16px;
+    padding: 10px 20px;
+    /* border-radius: 8px; */
+    margin-left: 30px;
+}
+#prsProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#prsProduct>a>div>img {
+    width: 100%;
+    /* height: 286px; */
+}
+#prsProduct>a>h3 {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #2e3337;
+    font-weight: 400;
+    /* margin-bottom: 40px; */
+}
+#prsProduct>a>h3+button {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #757575;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid red;
+    background-color: white;
+
+}
+
+#prsProduct>a>div>p:nth-child(1)>span {
+    /* font-size: 18px; */
+    color: #757575;
+    text-decoration: line-through
+}
+#prsProduct>a>div>p+p {
+    font-size: 22px;
+    font-weight: 600;
+}
+#prsProduct>a>div+button {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+    color: white;
+    font-weight: 400;
+    padding: 8px 10px;
+    background-color: #333;
+}

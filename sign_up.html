@@ -15,11 +15,11 @@
         #puklabel { 
             margin-left:-8px;
             margin-right:-8px;
-            margin-top:-10px;
+            margin-top:-15px;
             padding:1px 200px 0px 40px;
             margin-bottom:px;
             background-color:white;
-            border:1px solid black;
+            border:1px solid rgb(234, 225, 225);
             width:100%;
             position:fixed;
         
@@ -29,11 +29,22 @@
             margin-top:1px;
             font-weight:bolder;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
+            margin-bottom:2px;
         }
-        #puklabel>p {
+        #puklabel>span:nth-child(2){
             margin-top:-38px;
             margin-left:10px;
             margin-bottom:8px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        #puklabel>span:nth-child(3) {
+            color:aqua;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+        }
+
+        #puklabel>span:nth-child(4) {
             font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
 
@@ -261,17 +272,15 @@
             margin-top:10px;
         }
 
-
-
-        
-
     </style>
 </head>
 <body>
     <div id="pukback">
         <div id="puklabel">
             <h1>SkinStore</h1>
-            <p>part of the lookfantastic group</p>
+            <span>part of the</span>
+            <span>look</span>
+            <span>fantastic group</span>
         </div>
     
         <div id="pukmain">

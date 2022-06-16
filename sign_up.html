@@ -5,285 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><img src="" alt="error"/>About you|SkinStore</title>
-
-    <style>
-        #pukback {
-            background-color:rgb(243, 241, 241);
-        }
-        
-
-        #puklabel { 
-            margin-left:-8px;
-            margin-right:-8px;
-            margin-top:-15px;
-            padding:1px 200px 0px 40px;
-            margin-bottom:px;
-            background-color:white;
-            border:1px solid rgb(234, 225, 225);
-            width:100%;
-            position:fixed;
-        
-        }
-        #puklabel>h1 {
-            font-size:50px;
-            margin-top:1px;
-            font-weight:bolder;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            margin-bottom:2px;
-        }
-        #puklabel>span:nth-child(2){
-            margin-top:-38px;
-            margin-left:10px;
-            margin-bottom:8px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #puklabel>span:nth-child(3) {
-            color:aqua;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-
-        }
-
-        #puklabel>span:nth-child(4) {
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain {
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-            width:50%;
-            margin-left:25%;
-            padding-bottom:50px;
-            background-color:white;
-            padding-top:1px;
-            margin-bottom: auto;
-            
-        }
-
-        #puklink {
-            display:flex;
-            margin-left:15px;
-            margin-right:30px;
-            justify-content:space-evenly;
-        }
-
-        #puklink>div:first-child,#puklink>div:nth-child(2) {
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            width:280px;
-            padding-bottom: 10px;
-        }
-
-        #pukmain>h2:first-child,#pukmain>h2:nth-child(2) {
-            margin-top: 70px;
-            margin-left:30px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>hr {
-            margin:40px 45px 35px 30px;
-        }
-
-        #pukmain>h2:nth-child(5) {
-            margin-left:30px;
-            margin-top:-5px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>h4:nth-child(6){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>input:nth-child(7){
-            margin-left:30px;
-            width:85%;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-
-        }
-
-        #pukmain>h4:nth-child(8){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>input:nth-child(9){
-            margin-left:30px;
-            width:85%;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-        }
-
-        #pukmain>h4:nth-child(10){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>input:nth-child(11){
-            margin-left:30px;
-            width:85%;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-        }
-
-        #pukmain>h4:nth-child(12){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>div:nth-child(13){
-            margin-left:30px;
-            width:85%;
-        }
-
-        #pukmain>div:nth-child(13)>input {
-            margin-left:30px;
-            width:100%;
-            margin-left:0px;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-
-        }
-
-        #pukmain>p:nth-child(14) {
-            margin-left:30px;
-            width:85%;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain>h4:nth-child(15){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain>div:nth-child(16)>input {
-            margin-left:30px;
-            width:85%;
-            margin-bottom:30px;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-        }
-
-        #pukmain>span:nth-child(17){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain>input:nth-child(19){
-            margin-left:30px;
-            width:85%;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-        }
-
-        #pukmain>p:nth-child(20){
-            margin-left:30px;
-            margin-bottom:10px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain>div:nth-child(21){
-            margin-left:30px;
-            margin-bottom:30px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-            margin-right:45px;
-            padding-left:25px;
-            margin-top: 30px;
-            padding-top:20px;
-            background-color:rgb(233, 233, 233);
-            padding-bottom:20px;
-
-        }
-
-        #pukmain>div:nth-child(21)>input {
-            margin-top:20px;
-            width:90%;
-            height:40px;
-            border:1px solid rgb(190, 188, 188);
-            border-radius:4px;
-        }    
-
-        #pukmain>button:nth-child(22){
-            margin-left:30px;
-            margin-bottom:10px;
-            width:90%;
-            height:40px;
-            background-color:black;
-            color:white;
-            font-size:20px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-
-        #pukmain>span:nth-child(24){
-            margin-left:30px;
-            margin-bottom:10px;
-            margin-bottom:30px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain>span:last-child {
-            margin-left:30px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #pukmain{
-            margin:auto;
-        }
-
-        #img {
-            width:30px;
-            padding-top:6px;
-            padding-left:40px;
-        }
-        #img2 {
-            width:30px;
-            padding-top:6px;
-            padding-left:60px;
-
-        }
-
-        #puklink>div:first-child>span {
-            font-weight:bolder;
-            padding-left:20px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-
-        #fb,#gog {
-            margin-left:1px;
-            margin-top:10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/sign_up.css">
 </head>
 <body>
     <div id="pukback">
         <div id="puklabel">
             <h1>SkinStore</h1>
-            <span>part of the</span>
-            <span>look</span>
-            <span>fantastic group</span>
+            <p>part of the lookfantastic group</p>
         </div>
     
-        <div id="pukmain">
+        <form id="pukmain">
             <h2>About You</h2>
             <h2>Sign Up With</h2>
             <div id="puklink">
@@ -293,40 +24,43 @@
             <hr>
             <h2>Or create an email account</h2>
             <h4>*Full Name</h4>
-            <input type="text"/>
+            <input type="text" id="pukName"/>
             <h4>*Email address</h4>
-            <input type="text"/>
+            <input type="email" id="pukEmail"/>
             <h4>*confirmEmail address</h4>
-            <input type="text" required/>
+            <input type="email" id="pukEmailCon" required/>
             <h4>*Password</h4>
             <div>
-                <input type="password"/>
+                <input type="password" required id="pukPass" />
             </div>
             
             <p>Include a minimum of 6 characters, and contain at least 1 number</p>
             <h4>*Confirm Password</h4>
             <div>
-                <input type="password"/>
+                <input type="password" required id="pukPassCon"/>
             </div>
             <span>Cell Phone Number</span>
             <span>(Optional)<br></span>
-            <input type="number"/>
+            <input type="number" id="pukMobNo"/>
             <p>We will use this number to send occasional promotional messages.</p>
     
             <div>
                 <span>Referral Code</span>
                 <span>(Optional)</span><br>
-                <input type="text"/>
+                <input type="text" id="pukReff" />
                 <p>* Your referrals discount is automatically applied at cart</p>
             </div>
-            <button>CONTINUE</button><br>
+            <!-- <button>CONTINUE</button> -->
+            <input id="pukSubmit" type="submit" value="CONTINUE">
+            <br>
             <span>By proceeding, you are confirming that you agree to our</span> 
             <span><u>Terms and Conditions</u></span>
             <span>and</span> <br>
             <span><u>Privacy Policy</u></span>
         
-        </div>
+        </form>
     </div>
 
 </body>
 </html>
+<script src="./js/sign_up.js"></script>

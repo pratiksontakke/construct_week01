@@ -1,4 +1,51 @@
+
 /* pratik section */
+/* image slider */
+#prsPratik>#prsimgDiv{
+    /* height: 550px; */
+    width: 100%;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#prsPratik>#prsimgDiv>#prsimgSlider {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/01Slider.png");
+    background-size: 100% 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* animation: changeImage 100s linear infinite; */
+    animation: changeImage 20s linear 5s infinite;
+    /* animation-delay: 20s; */
+} 
+
+
+@keyframes changeImage {
+    0% {
+        background-image: url("../images/01Slider.png");
+    }
+
+    25% {
+        background-image: url("../images/02Slider.png");
+    }
+
+    50% {
+        background-image: url("../images/03Slider.png");
+    }
+
+    75% {
+        background-image: url("../images/04Slider.png");
+    }
+
+    100% {
+        background-image: url("../images/05Slider.png");
+    }
+
+}
+/* image slider end */
 .prsFaintText {
     color: #757575;
 }

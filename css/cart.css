@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.NASinitial{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+}
+.NASinitial>button{
+      padding: 10px 10px;
+      background-color: black;
+      color: white;
+
+}
+
+.NASnotifications>div{
+       display: flex;
+       align-items: center;
+       border: 1px solid rgb(191, 202, 212);
+       padding: 5px;
+       margin: 20px 30px;
+       background-color: rgb(181, 211, 237);
+}
+.NASnotifications img{
+      width: 20px;
+      border-radius: 50%;
+      padding-right: 5px;
+}
+.NASnotifications>span:last-child{
+      color: #F7A193;
+      padding-left: 10px;
+}
+.NAScart{
+       /* border: 1px solid red; */
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: stretch;
+       margin-top: 20px;
+       padding: 10px;
+       width: 100%;
+}
+.left-cart{
+      /* border: 1px solid blue; */
+      min-width: 600px;
+      flex-grow: 1;
+      padding: 5px;
+}
+table{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(179, 177, 177);
+    border-style: solid;
+    width: 100%;
+    text-align: left;
+}
+
+td{
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(177, 175, 175);
+    border-style: solid;
+    text-align: left;
+    
+}
+.left-cart img{
+     width: 100px;
+}
+td{
+    padding: 10px;
+    min-width: 120px;
+}
+tr>td:first-child{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+tr>td:first-child>p{
+      flex-basis: 300px;
+      flex-grow: 1;
+      margin-left: 10px;
+}
+.NASquantity{
+padding: 5px 8px;
+background-color: #c3bfbf;
+border: none;
+font-weight: bold;
+font-size: 20px;
+}
+#NAScart-total{
+    display: flex;
+    justify-content: right;
+    padding-right: 130px;
+}
+#NAScart-total>p{
+    margin: 20px;
+    font-size: 20px;
+}
+#NAScart-total>p:last-child{
+    font-weight: bold;
+}
+.right-cart{
+      border: 1px solid orange;
+      flex-grow: 1;
+      min-width: 300px;
+      padding: 5px;
+
+}

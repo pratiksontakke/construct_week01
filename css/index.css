@@ -2,17 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
     overflow-x: hidden;
 }
+
 /* pratik section */
 
 .prsFaintText {
     color: #757575;
 }
+
 #prsPratikMain {
     margin: 10px;
 }
+
 #prsPratik {
     margin: auto;
     width: 90%;
@@ -83,7 +87,12 @@ body {
     border: 1px solid red;
     background-color: white;
     margin: 0 0 15px 0;
+}
 
+
+#prsPratik>#prsweekOffer>a>div>p:nth-child(1)>span {
+    text-decoration: line-through;
+    color: #757575;
 }
 #prsPratik>#prsweekOffer>a>div>p:nth-child(1)>span {
     text-decoration: line-through;
@@ -333,3 +342,4 @@ body {
 }
 
 /* pratik section end! */
+

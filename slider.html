@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+    img {
+        width: 100%;
+    }
+
+    .height {
+        height: 10px;
+    }
+
+    /* Image-container design */
+    .image-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* Next and previous icon design */
+    .previous,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        margin-top: -25px;
+    }
+
+    /* caption decorate */
+    .captionText {
+        color: #000000;
+        font-size: 14px;
+        position: absolute;
+        padding: 12px 12px;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fa {
+        font-size: 32px;
+    }
+
+    .fa:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+        color: white;
+    }
+
+    .footerdot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #bbbbbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.5s ease;
+    }
+    .active,
+    .footerdot:hover {
+        background-color: black;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- Image container of the image slider -->
+    <div class="image-container">
+        <a href="">
+            <div class="slide">
+                <div class="slideNumber"></div>
+                <img src="./images/01Slider.png">
+            </div>
+        </a>
+        <a href="">
+            <div class="slide">
+                <div class="slideNumber"></div>
+                <img src="./images/02Slider.png">
+            </div>
+        </a>
+        <a href="">
+            <div class="slide">
+                <div class="slideNumber"></div>
+                <img src="./images/03Slider.png">
+            </div>
+        </a>
+        
+        
+        <!-- Next and Previous icon to change images -->
+        <a class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+        </a>
+        <a class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+        </a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="footerdot" onclick="activeSlide(1)">
+        </span>
+        <span class="footerdot" onclick="activeSlide(2)">
+        </span>
+        <span class="footerdot" onclick="activeSlide(3)">
+        </span>
+        <span class="footerdot" onclick="activeSlide(3)">
+        </span>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var slideIndex = 1;
+    displaySlide(slideIndex);
+
+    function moveSlides(n) {
+        displaySlide(slideIndex += n);
+    }
+
+    function activeSlide(n) {
+        displaySlide(slideIndex = n);
+    }
+
+    /* Main function */
+    function displaySlide(n) {
+        var i;
+        var totalslides =
+            document.getElementsByClassName("slide");
+        var totaldots =
+            document.getElementsByClassName("footerdot");
+
+        if (n > totalslides.length) {
+            slideIndex = 1;
+        }
+
+        if (n < 1) {
+            slideIndex = totalslides.length;
+        }
+        for (i = 0; i < totalslides.length; i++) {
+            totalslides[i].style.display = "none";
+        }
+        for (i = 0; i < totaldots.length; i++) {
+            totaldots[i].className =
+                totaldots[i].className.replace(" active", "");
+        }
+        totalslides[slideIndex - 1].style.display = "block";
+        totaldots[slideIndex - 1].className += " active";
+    }
+</script>

@@ -87,14 +87,17 @@ body {
     border: 1px solid red;
     background-color: white;
     margin: 0 0 15px 0;
-
 }
+
 
 #prsPratik>#prsweekOffer>a>div>p:nth-child(1)>span {
     text-decoration: line-through;
     color: #757575;
 }
-
+#prsPratik>#prsweekOffer>a>div>p:nth-child(1)>span {
+    text-decoration: line-through;
+    color: #757575;
+}
 #prsPratik>#prsweekOffer>a>div>p+p {
     font-size: 18px;
     margin: 0 0 15px 0;
@@ -207,12 +210,10 @@ body {
     background-color: white;
     margin: 0 0 15px 0;
 }
-
 #prsPratik>#prsTrendingNow>div>div>a>div>p:nth-child(1)>span {
     text-decoration: line-through;
     color: #757575;
 }
-
 #prsPratik>#prsTrendingNow>div>div>a>div>p+p {
     font-size: 18px;
     margin: 0 0 15px 0;
@@ -341,3 +342,4 @@ body {
 }
 
 /* pratik section end! */
+

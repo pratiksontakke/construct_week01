@@ -38,16 +38,18 @@
 .NAScart{
        /* border: 1px solid red; */
        display: flex;
-       flex-wrap: wrap;
+       flex-direction: row;
+       flex-wrap: wrap; 
        justify-content: space-between;
-       align-items: stretch;
+       align-items: flex-start;
+       margin: auto;
        margin-top: 20px;
        padding: 10px;
-       width: 100%;
+      
 }
 .left-cart{
       /* border: 1px solid blue; */
-      min-width: 600px;
+      flex-basis: 600px;
       flex-grow: 1;
       padding: 5px;
 }
@@ -66,6 +68,29 @@ td{
     text-align: left;
     
 }
+#form{
+    display: flex;
+    justify-content: center;
+  
+}
+#form>input, #form>button{
+    border: 1px solid rgb(85, 83, 83);
+    padding: 20px 20px 20px 10px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+#form>input{
+    width: 250px;
+}
+#NASsavings{
+    margin: 20px;
+    color: green;
+}
+
+
+
+
+
 .left-cart img{
      width: 100px;
 }
@@ -80,7 +105,6 @@ tr>td:first-child{
     
 }
 tr>td:first-child>p{
-      flex-basis: 300px;
       flex-grow: 1;
       margin-left: 10px;
 }
@@ -104,9 +128,80 @@ font-size: 20px;
     font-weight: bold;
 }
 .right-cart{
-      border: 1px solid orange;
+      margin: auto;
+      flex-basis: 300px;
       flex-grow: 1;
-      min-width: 300px;
       padding: 5px;
+      background-color: #F2F2F2;
+      margin-top: 0px;
+}
 
+
+#NASgift-selection{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        background-color: #F2F2F2;
+        margin: auto;
+}
+#NASgift-selection>button{
+         background-color: transparent;
+         border: none;
+         font-weight: bold;
+         font-size: 30px;
+         padding-top: 10px;
+}
+
+#NASgift-line{
+     padding: 5px 15px;
+
+}
+
+
+.NASgift-options{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+     background-color: white;
+     margin: 10px;
+}
+.NASgift-options>p{
+       flex-grow: 1;
+       padding: 0px 20px;
+}
+
+.NASgift-options>img:nth-child(3){
+        width: 20px;
+        border-radius: 50%;
+}
+
+
+
+#NASshopping-checkout>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+#NASshopping-checkout>div>button{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#NASshopping-checkout>div>button:last-child{
+   background-color: black;
+   color: white;
+}
+#NASshopping-checkout>div:last-child{
+        display: flex;
+        justify-content: right;
+        padding: 0px 10px;
+}
+#NASshopping-checkout>div:last-child>img{
+       width: 80px;
+       border: 1px solid rgb(147, 144, 144);
+       border-radius: 5px;
+       margin: 0px 5px;
 }

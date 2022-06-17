@@ -1,8 +1,9 @@
   // Cart Data should be retrived and append to tbody
-  let left_cart = document.querySelector(".left-cart");
+  let left_cart = document.querySelector(".NASleft-cart-total");
   let tbody  = document.querySelector('tbody');
+  let total_price;
 
-  let cart = JSON.parse(localStorage.getItem('salePageData')) || [];
+  let cart = JSON.parse(localStorage.getItem("addToCartData")) || [];
    displayCart(cart);
    function displayCart(data){
           tbody.innerText = "";
@@ -68,17 +69,19 @@
             // Saving 
               totalSavings();
 
-
+            // total price notification   1. free delivery 2. gifts
+              totalPrice_freeDelivery();
+              totalPrice_gifts();
 
    }
 
    function removeProduct(data, index){
           // remove the product from cart;
          
-         cart = JSON.parse(localStorage.getItem('salePageData')) || [];
+         cart = JSON.parse(localStorage.getItem("addToCartData")) || [];
          console.log(cart, index)
          cart.splice(index, 1);
-         localStorage.setItem('salePageData', JSON.stringify(cart));
+         localStorage.setItem("addToCartData", JSON.stringify(cart));
          console.log(cart)
          displayCart(cart);
    }
@@ -86,17 +89,17 @@
    function reduceQuantity(data, index){ 
          // quantity will reduce of particular product in cart
 
-         cart = JSON.parse(localStorage.getItem('salePageData')) || [];
+         cart = JSON.parse(localStorage.getItem("addToCartData")) || [];
          let quantity = cart[index].quantity;
 
           quantity = quantity -1;
 
           if(quantity == 0){
-            return   removeProduct(data, index);
+            return;
           }
 
           cart[index].quantity  = quantity;
-          localStorage.setItem('salePageData', JSON.stringify(cart));
+          localStorage.setItem("addToCartData", JSON.stringify(cart));
          console.log(data, index);
 
          //display data again on cart
@@ -107,12 +110,12 @@
    function increaseQuantity(data, index){
                   // quantity will increase of particular product in cart
 
-         cart = JSON.parse(localStorage.getItem('salePageData')) || [];
+         cart = JSON.parse(localStorage.getItem("addToCartData")) || [];
          let quantity = cart[index].quantity;
 
           quantity = quantity + 1;
           cart[index].quantity  = quantity;
-          localStorage.setItem('salePageData', JSON.stringify(cart));
+          localStorage.setItem("addToCartData", JSON.stringify(cart));
          console.log(data, index);
          // dispaly data again on cart 
          displayCart(cart);
@@ -120,7 +123,7 @@
 
    function totalPrice(data){
        
-        let total_price = data.reduce(function(pre, el){
+         total_price = data.reduce(function(pre, el){
                 return   pre+(el.price *el.quantity);
         }, 0);
 
@@ -148,6 +151,9 @@
 
    function totalSavings(){
           // total saving should be calculated and it should be showed below Cart total
+
+
+          // apply coupan code here
         
           if(document.querySelector('#total-savings')){
                document.querySelector("#total-savings").remove();
@@ -158,11 +164,87 @@
           let h1 = document.createElement('h1');
           h1.innerText = 'Total Savings:'
           let p = document.createElement('p');
-          let b = document.createElement('b');
-          b.innerText = '25% is off on'
-          p.append(b);
+          p.setAttribute('id', 'NASsavings')
+        
 
-          div.append(h1, p);
+          let form = document.createElement('form');
+          form.setAttribute('id', 'form');
+          let input = document.createElement('input')
+          input.setAttribute('id', 'NAScoupon');
+          input.setAttribute('placeholder', 'Got a Coupon Code? Enter Here.')
+          let button = document.createElement('button');
+          button.setAttribute('type', 'submit');
+          button.innerText = 'ADD';
+          form.append(input, button);
+          div.append(h1, p, form);
+          form.addEventListener('submit', couponSubmited);
 
           left_cart.append(div);
+   }
+
+   function couponSubmited(){
+         event.preventDefault();
+        let saving = document.querySelector('#NASsavings');
+        saving.innerText = "";
+        let input_value = document.getElementById('NAScoupon').value;
+        if(input_value== 'Masai30' || input_value == 'masai30'){
+        saving.append('25% is off on Every Product');
+        }
+   }
+
+     document.querySelector('#NASgifts-click').addEventListener('click', collapseGifts);
+
+   //   collapse of Gift carts 
+   function collapseGifts(){
+    let display =   document.getElementById('NASgifts').style.display;
+    
+    if(display == 'none'){
+          document.getElementById('NASgifts').style.display = 'block';
+          document.getElementById('NASgift-line').style.display = 'block';
+          document.getElementById('NASqualified').style.display = 'block';
+
+    }else{
+          document.getElementById('NASgifts').style.display = 'none';
+          document.getElementById('NASgift-line').style.display = 'none';
+          document.getElementById('NASqualified').style.display = 'none';
+    }
+
+   }
+
+
+   function totalPrice_freeDelivery(){
+          if(document.getElementById('NASdelivery')){
+            document.getElementById('NASdelivery').remove();
+          }
+         if(total_price  < 50){
+              
+                let div = document.createElement('div');
+                 div.setAttribute('id', 'NASdelivery');
+                let img = document.createElement('img');
+                img.setAttribute('src', 'https://www.citypng.com/public/uploads/preview/blue-and-white-round-flat-bell-icon-free-png-11638983856xnczcwyace.png');
+                let span = document.createElement('span');
+                span.innerText  = `Spend another $${(50-total_price)} and receive FREE US tracked delivery!`;
+                div.append(img, span);
+                document.querySelector('.NASnotifications').append(div);
+         }
+   }
+
+   function totalPrice_gifts(){
+    if(document.getElementById('NASdelivery')){
+      document.getElementById('NASdelivery').remove();
+    }
+    if(total_price >= 130){
+            let div = document.createElement('div');
+            div.setAttribute('id', 'NASdelivery');
+            div.style.backgroundColor= 'green';
+            div.style.display = 'block';
+          let img = document.createElement('img');
+          img.setAttribute('src', 'https://www.citypng.com/public/uploads/preview/blue-and-white-round-flat-bell-icon-free-png-11638983856xnczcwyace.png');
+          let p = document.createElement('p');
+          p.innerText  = `You have qualified for: Select a gift for you or someone you love when you spend $130 or more
+          Don't forget to make your selection below`;
+          p.style.display = 'inline'
+          div.append(img, p);
+          document.querySelector('.NASnotifications').append(div);
+    }
    }

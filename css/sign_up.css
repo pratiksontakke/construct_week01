@@ -10,7 +10,6 @@
     padding: 1px 200px 0px 40px;
     margin-bottom: px;
     background-color: white;
-    border: 1px solid black;
     width: 100%;
     position: fixed;
 
@@ -18,15 +17,23 @@
 
 #puklabel>h1 {
     font-size: 50px;
-    margin-top: 1px;
+    margin-top: 0px;
+    margin-bottom:0px;
     font-weight: bolder;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#puklabel>p {
-    margin-top: -38px;
-    margin-left: 10px;
-    margin-bottom: 8px;
+#puklabel>span:nth-child(2) {
+    margin-top:5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#puklabel>span:nth-child(3) {
+    color:rgba(7, 247, 247, 0.767);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#puklabel>span:nth-child(4) {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 

@@ -1,32 +1,48 @@
 /* prsweekOffer */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 #prsPratik {
     margin: auto;
     width: 90%;
 }
+
 #prsFilter {
     width: 100%;
     text-align: left;
     padding: 10px;
+    margin-top: 15px;
 }
+
 #prsFilter>select {
     font-size: 16px;
     padding: 10px 20px;
     /* border-radius: 8px; */
     margin-left: 30px;
 }
+
 #prsProduct {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
     gap: 30px;
     justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#prsProduct>a {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
 }
 
 #prsProduct>a>div>img {
     width: 100%;
+    margin: 0 0 20px 0;
     /* height: 286px; */
 }
+
 #prsProduct>a>h3 {
     text-align: left;
     font-family: 'Lato', sans-serif;
@@ -34,8 +50,9 @@
     line-height: 1.2;
     color: #2e3337;
     font-weight: 400;
-    /* margin-bottom: 40px; */
+    margin: 0 0 15px 0;
 }
+
 #prsProduct>a>h3+button {
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -46,18 +63,20 @@
     padding: 8px 10px;
     border: 1px solid red;
     background-color: white;
-
+    margin: 0 0 15px 0;
 }
 
 #prsProduct>a>div>p:nth-child(1)>span {
-    /* font-size: 18px; */
     color: #757575;
     text-decoration: line-through
 }
+
 #prsProduct>a>div>p+p {
     font-size: 22px;
     font-weight: 600;
+    margin: 0 0 15px 0;
 }
+
 #prsProduct>a>div+button {
     text-align: center;
     font-family: 'Lato', sans-serif;

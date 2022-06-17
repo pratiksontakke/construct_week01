@@ -1,273 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-        *{
-            margin:0px;
-            padding: 0px;
-        }
-        #amnavbar{
-            width:100%;
-            height:230px;
-            /* border: 1px solid rgb(0, 255, 60); */
-        }
-        #amnav1{
-         display: flex;
-         justify-content: space-evenly;
-         width: 100%;
-         /* border: 1px solid rgb(11, 10, 10); */
-         color:rgb(77, 73, 73) ;
-         font-family: 'Open Sans', sans-serif;  
-         background-color: #eeeeee;
-         display: flex;
-        justify-content: space-evenly;
-        }
-        #amnav1>div>img{
-            height:23px;
-            width:30px;
-            margin-bottom: 7px;
-            margin-left: 1327px;
-
-        }
-        #amnav1>div{
-        display: flex;
-        justify-content: space-evenly;
-        width: 15%;
-        color:rgb(77, 73, 73) ;
-        font-family: 'Open Sans', sans-serif;
-        margin-left: 30%;
-  
-        }
-        #amnav1>div>p{
-          display:flex;
-          justify-content: space-around;
-          align-items: center;
-          /* border:1px solid red; */
-          margin-left: 40px;
-          color:gray ; 
-          
-        }
-        #amnav2{
-            /* height:50%;
-            width:95%;
-            border: 1px solid red;
-            padding-left: 90px; */
-            /* border-bottom: 2px solid black; */
-           display:flex;
-           gap: 10px;
-           align-items: center;
-           /* border:1px solid red;       */
-           width: 100%;
-           height:50%
-            
-        }
-        #amnav2>div>img{
-            height:9%;
-            width: 55%;
-            margin-left: 85px;
-            /* border:1px solid red; */
-
-        }
-        .amsearch{
-            width: 28%;
-            height:27px;
-            margin-left: 115px;
-            border:1px solid black;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            padding: 5px;
-        }
-        .amsearch>input{
-            margin-left: 30px;
-            width:410px;
-            margin:auto;
-            margin-left: 10px;
-            height:15px;
-            border:1px solid white;
-            border:none;
-            outline:none;
-            font-size: 15px;
-            color: gray;
-            
-        }
-        .amsearch>i{
-            font-size: 20px;
-            color: rgb(122, 118, 118) ;
-        }
-        #amaccount{
-            display:flex;
-            justify-content: space-around;
-            margin-left: 15%;
-
-
-        }
-        #amaccount>i{
-            font-size: 20px;
-            gap:10px;
-            margin-left: 20%;
-            padding-left: 0px;
-
-        }
-        #amaccount>p{
-            font-size: 17px;
-            color: gray;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 8px;
-        }
-        #aminnerbox{
-            display: flex;
-            justify-content: space-between;
-            margin-left: 200px;
-
-        }
-    
-        #amcart{
-            display:flex;
-            justify-content: space-around;
-            margin-left: 40%;
-            /* border: 1px solid blue; */
-            width:80px;
-
-
-        }
-        #amcart>i{
-            font-size: 20px;
-            gap:10px;
-            margin-left: 20%;
-            padding-left: 0px;
-            padding-bottom: 4px;
-
-        }
-        #amcart>p{
-            font-size: 17px;
-            color: gray;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 5px;
-        }
-        #amnav3{
-            width:100%;
-            height:40px;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            border-top: 2px solid black;
-        }
-        #amnav3Container{
-            width:80%;
-            margin-inline: auto;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            height:100%;
-        }
-        #amnav3Container a{
-            text-decoration: none;
-        }
-
-        #amnav3Container div{
-            height:100%;
-            display: flex;
-            align-items: center;
-            padding-inline: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-
-        #amnav3Container div:hover {
-                background-color: black;
-        } 
-        #amnav3Container div:hover > a {
-                color: white;
-        }
-        #amnav4{
-          height:40px;
-          width: 100%;
-          /* border: 1px solid pink; */
-          background-color: #eeeeee;
-          /* display: flex;
-          align-items: center;
-          justify-content: space-evenly; */
-          padding-top: 18px;
-
-        }
-        #amlast{
-            /* border:1px solid blue; */
-           display:flex;
-           width:70%;
-           margin-inline: auto;
-          align-items: center;
-          justify-content: space-between;
-          /* margin-top:50px; */
-        }
-        #amlast>div{
-            height:20px;
-            /* border: 1px solid black; */
-            display: flex;
-            align-items: center;
-           justify-content: space-evenly;
-           column-gap: 10px;
-        }
-        /* .prize>p{
-            display: flex;
-            font-size: 15px;
-            margin-right: 10px;
-            align-items: center;
-        justify-content: space-evenly;
-        } */
-/*end apkesha */
+body {
+    overflow-x: hidden;
+}
 
 /* pratik section */
-/* image slider */
-#prsPratik>#prsimgDiv {
-    /* height: 550px; */
-    width: 100%;
-    display: grid;
-    place-items: center;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
 
-#prsPratik>#prsimgDiv>#prsimgSlider {
-    width: 100%;
-    height: 500px;
-    background-image: url("../images/01Slider.png");
-    background-size: 100% 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* animation: changeImage 100s linear infinite; */
-    animation: changeImage 20s linear 5s infinite;
-    /* animation-delay: 20s; */
-}
-
-
-@keyframes changeImage {
-    0% {
-        background-image: url("../images/01Slider.png");
-    }
-
-    25% {
-        background-image: url("../images/02Slider.png");
-    }
-
-    50% {
-        background-image: url("../images/03Slider.png");
-    }
-
-    75% {
-        background-image: url("../images/04Slider.png");
-    }
-
-    100% {
-        background-image: url("../images/05Slider.png");
-    }
-
-}
-
-/* image slider end */
-
-/* pratik section */
 .prsFaintText {
     color: #757575;
+}
+
+#prsPratikMain {
+    margin: 10px;
 }
 
 #prsPratik {
@@ -294,6 +41,7 @@
     color: #2e3337;
     font-weight: 400;
     margin-bottom: 40px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -308,10 +56,12 @@
     grid-template-rows: repeat(1, auto);
     gap: 15px;
     justify-content: space-between;
+    /* margin-bottom: 400px; */
 }
 
 #prsPratik>#prsweekOffer>a>div>img {
     width: 100%;
+    margin: 0 0 20px 0;
     /* height: 286px; */
 }
 
@@ -322,6 +72,7 @@
     line-height: 1.2;
     color: #2e3337;
     font-weight: 400;
+    margin: 0 0 15px 0;
     /* margin-bottom: 40px; */
 }
 
@@ -335,11 +86,18 @@
     padding: 8px 10px;
     border: 1px solid red;
     background-color: white;
+    margin: 0 0 15px 0;
 
+}
+
+#prsPratik>#prsweekOffer>a>div>p:nth-child(1)>span {
+    text-decoration: line-through;
+    color: #757575;
 }
 
 #prsPratik>#prsweekOffer>a>div>p+p {
     font-size: 18px;
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsweekOffer>a>div+button {
@@ -368,6 +126,7 @@
     height: 100%;
     width: 100%;
     border-radius: 500000px;
+    margin: 0 0 20px 0;
 }
 
 #prsPratik>#prsTrendingOffers>a>div {
@@ -381,6 +140,7 @@
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsTrendingOffers>a>div>div>button {
@@ -391,7 +151,7 @@
     padding: 10px;
     background-color: white;
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 15px 0 15px 0;
 }
 
 #prsPratik>#prsTrendingNow {
@@ -420,6 +180,7 @@
 
 #prsPratik>#prsTrendingNow>div>div>a>div>img {
     width: 100%;
+    margin: 0 0 20px 0;
     /* height: 286px; */
 }
 
@@ -430,6 +191,7 @@
     line-height: 1.2;
     color: #2e3337;
     font-weight: 400;
+    margin: 0 0 15px 0;
     /* margin-bottom: 40px; */
 }
 
@@ -443,11 +205,17 @@
     padding: 8px 10px;
     border: 1px solid red;
     background-color: white;
+    margin: 0 0 15px 0;
+}
 
+#prsPratik>#prsTrendingNow>div>div>a>div>p:nth-child(1)>span {
+    text-decoration: line-through;
+    color: #757575;
 }
 
 #prsPratik>#prsTrendingNow>div>div>a>div>p+p {
     font-size: 18px;
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsTrendingNow>div>div>a>div+button {
@@ -474,6 +242,7 @@
 
 #prsPratik>#prsBuyingNow>a>div>img {
     width: 100%;
+    margin: 0 0 20px 0;
 }
 
 #prsPratik>#prsBuyingNow>a>h3 {
@@ -483,11 +252,12 @@
     line-height: 1.2;
     color: #2e3337;
     font-weight: 400;
-    /* margin-bottom: 40px; */
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsBuyingNow>a>div>p {
     font-size: 18px;
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsBuyingNow>a>div+button {
@@ -535,6 +305,7 @@
     height: 100%;
     width: 100%;
     border-radius: 500000px;
+    margin: 0 0 20px 0;
 }
 
 #prsPratik>#prsTheBlog>a>div {
@@ -548,6 +319,7 @@
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
+    margin: 0 0 15px 0;
 }
 
 #prsPratik>#prsTheBlog>a>div>div>button {
@@ -558,112 +330,14 @@
     padding: 10px;
     background-color: white;
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 15px 0 15px 0;
 }
 
 #prsPratik>#prsbottomBanner>div>a>img {
     width: 100%;
     height: 240px;
-    margin-bottom: 80px;
-    margin-bottom: 80px;
+    margin: 30px 0 60px 0;
+    /* margin-bottom: 80px; */
 }
 
 /* pratik section end! */
-
-
-
-/* Narendra Css design Start */
-
- /* This is bottom css design of Index Page */
- #NASupper-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-}
-.NASbold{
-  font-weight: bold;
-}
-#NASupper-bottom>div{
-      width: 50%; 
-}
-#NASupper-bottom>div>button{
-     padding: 10px 20px;
-     background-color: black;
-     color: white;
-     margin: 15px 0px;
-}
-#NASsocial-media{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 20px 0px;
-}
-#NASsocial-media>img{
-     width: 50px;
-     background-color: transparent;
-     border-radius: 50%;
-     margin-right: 10px;
-}
-
-#NASmiddle-bottom{
-     display: flex;
-     justify-content: space-between;
-     align-items: stretch;
-     width: 100%;
-     padding: 20px;
-     margin: auto;
-}
-#NASmiddle-bottom>div{
-  width: 50%;
-  padding-right: 10px;
-  
-}
-#NASmiddle-bottom p{
-     padding: 10px 0px;
-}
-#NASmiddle-bottom>div:nth-child(2){
-  display: flex;
-  justify-content: space-between;
-}
-#NASmiddle-bottom>div:nth-child(2)>div{
-     width: 30%;
-}
-.NASbottom-help{
-     display: flex;
-     justify-content: start;
-     align-items: center;
-}
-.NASbottom-help>img{
-     width: 20px;
-     background-color: transparent;
-}
-
-
-#NASlower-bottom{
-     display: flex;
-     justify-content: start;
-     align-items: stretch;
-     padding: 20px;
-     margin-bottom: 30px;
-}
-#NASlower-bottom>div{
-     width: 50%;
-}
-#NASpayment-media{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: start;
-       align-items: stretch;
-       width: 400px;
-       margin-top: 20px;
-}
-#NASpayment-media>img{
-     width: 50px;
-     margin: 5px;
-     border-radius: 5px;
-     border: 1px solid rgb(143, 141, 141);
-}
-/* Narendra Css Design Ended */

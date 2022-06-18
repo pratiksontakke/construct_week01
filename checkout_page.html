@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sale</title>
+    <title>Checkout Page</title>
     <link rel="stylesheet" href="./css/checkout_page.css" />
   </head>
 
@@ -13,12 +13,14 @@
       navbar.html
     </div> -->
     <div id="amCheckout">
-      <div>
+      <div style="background-color: white;">
         <form action="" id="amform">
           <div>
             <h3>1. Shipping Address.</h3>
             <div>
-              <label class="requiredCheckout" class="amCheckoutlabel" for="">Country/Region</label>
+              <label class="requiredCheckout" class="amCheckoutlabel" for=""
+                >Country/Region</label
+              >
             </div>
             <div>
               <select name="" id="amCountry">
@@ -30,52 +32,60 @@
               </select>
             </div>
             <div>
-              <label class="requiredCheckout" for="">Full Name</label>
+              <label class="requiredCheckout" for="">First Name</label>
             </div>
             <div>
-              <input required type="text"/>
+              <input id="firstName" required type="text" />
+            </div>
+            <div>
+              <label class="requiredCheckout" for="">Last Name</label>
+            </div>
+            <div>
+              <input id="lastName"  required type="text" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Zip Code/Postcode</label>
             </div>
             <div>
-              <input required type="number" />
+              <input id="zipCode" required type="number" />
             </div>
             <div>
-              <label class="requiredCheckout" for="">Company Name</label>
+              <label for="">Company Name</label>
             </div>
             <div>
-              <input required type="text" />
+              <input id="companyName"  type="text" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Address</label>
             </div>
             <div>
-              <input required type="text" />
+              <input id="address" required type="text" />
             </div>
             <div>
               <label for="">Address 2</label>
             </div>
             <div>
-              <input type="text" name="" id="" />
+              <input id="address2" type="text" name=""/>
             </div>
             <div>
-              <label class="requiredCheckout" for="">Apartment/Suite number</label>
+              <label class="requiredCheckout" for=""
+                >Apartment/Suite number</label
+              >
             </div>
             <div>
-              <input required type="text" name="" id="" />
+              <input required type="number" name="" id="apartmentNumber" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Town/City</label>
             </div>
             <div>
-              <input required type="text" name="" id="" />
+              <input required type="text" name="" id="city" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Contact Number</label>
             </div>
             <div>
-              <input required type="text" name="" id="" />
+              <input required type="number" name="" id="mob" />
             </div>
             <div>
               <p><a href="">Why do we need your number?</a></p>
@@ -103,36 +113,60 @@
               </div>
             </div>
             <div>
-              <label class="requiredCheckout" for="">Card Number</label>
+              <label class="requiredCheckout" for="" >Card Number</label>
             </div>
             <div>
-              <input required type="number" name="" id="" />
+              <input required type="number" name="" id="cardNumber" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Name on Card</label>
             </div>
             <div>
-              <input required type="text" name="" id="" />
+              <input required type="text" name="" id="cardName" />
             </div>
             <div>
               <label class="requiredCheckout" for="">Expiry Date</label>
             </div>
             <div>
-              <input required class="amCheckoutCardDate" type="number" name="" id="" />
-              <input required class="amCheckoutCardDate" type="number" name="" id="" />
+              <input
+                required
+                class="amCheckoutCardDate"
+                type="number"
+                name=""
+                placeholder="MM"
+                id="expMonth"
+              />
+              <input
+                required
+                class="amCheckoutCardDate"
+                type="number"
+                name=""
+                placeholder="YY"
+                id="expYrs"
+              />
             </div>
             <div>
               <label class="requiredCheckout" label for="">CVV</label>
             </div>
             <div>
-              <input required class="amCheckoutCardDate" type="text" name="" id="" />
+              <input
+                required
+                class="amCheckoutCardDate"
+                type="password"
+                name=""
+                id="cvv"
+              />
             </div>
           </div>
           <hr />
           <div>
-            <div><label class="requiredCheckout" for="">Use a different payment method:</label></div>
             <div>
-              <select name="" id="amDeliveryOption">
+              <label class="requiredCheckout" for=""
+                >Use a different payment method:</label
+              >
+            </div>
+            <div>
+              <select name="" id="amPaymentOption">
                 <option value="Pay-Pal">Pay-Pal</option>
                 <option value="Phone-Pay">Phone-Pay</option>
                 <option value="Paytm">Paytm</option>
@@ -141,24 +175,52 @@
             </div>
           </div>
           <hr />
-
           <div>
             <input required type="submit" id="amCheckoutBottom" />
           </div>
         </form>
         <p class="amCheckoutCenter">
-          By placing this order, you are confirming that you agree to our <a href="">Terms
-            and Conditions</a>  and <a href="">Privacy Policy</a>.
+          By placing this order, you are confirming that you agree to our
+          <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a>.
         </p>
       </div>
       <div id="amCard">
-            <h4>Order Summary</h4>
-            <h4>Qty: </h4>
-        <div>
-          <img src="https://s1.thcdn.com//productimg/70/70/12596428-1804775948668461.png" alt="">  
-          <p>SkinMedica Instant Bright Eye Cream .07oz (Free Gift)</p>
+        <h4>Order Summary</h4>
+        <h4>Qty:</h4>
+        <h4>Order Number : 412262597</h4>
+        <div class="totalFlex">
+          <p>Total to pay:</p>
+          <p>$ <span id="amCardTota1"></span></p>
         </div>
-      </div>
+        <div id="appendData">
+
+
+          <!-- <div class="amCardorder">
+            <div id="amCardImgRow">
+              <img
+                src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12674550-6504833218425212.jpg"
+                alt=""
+              />
+              <p>SkinMedica Instant Bright Eye Cream .07oz (Free Gift)</p>
+            </div>
+            <div>
+              <p>Quantity:</p>
+              <p id="amCardQty">1</p>
+            </div>
+            <div>
+              <p>Price:</p>
+              <p>$ <span id="amCardprice">400</span></p>
+            </div>
+          </div> -->
+        </div>    
+          <hr>
+          <div>
+            <div class="totalFlex">
+              <p>Total to pay:</p>
+              <p>$ <span id="amCardTota2"></span></p>
+            </div>
+          </div>
+        
     </div>
 
     <!-- <div id="NASbottomNavbar" include-html="./footer.html">
@@ -166,7 +228,7 @@
     </div> -->
   </body>
 </html>
-<script type="module" src="./js/sale.js"></script>
+<script type="module" src="./js/checkout_page.js"></script>
 
 <script src="./js/sub_js/jquery-3.6.0.min.js"></script>
 <script src="./js/sub_js/include-html.min.js"></script>

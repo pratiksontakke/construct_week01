@@ -45,32 +45,32 @@
 //     }
 // }
 
-document.querySelector("form").addEventListener("submit",login)
+document.querySelector("form").addEventListener("submit", login);
 var signupData = JSON.parse(localStorage.getItem("signupData")) || [];
-FormData.addEventListener("submit",function(event){
-    event.preventDefault
-    let data={
-        email:form.email.value,
-        password:form.password.value,
-    }
-    if(checkSignIn(data.email,data.password)===true){
-    localStorage.setItem("signIn",JSON.stringify(data));
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  let data = {
+    email: document.querySelector("#email").value,
+    password: document.querySelector("#password").value,
+  };
+  if (checkSignIn(data.email, data.password)) {
+    // localStorage.setItem("signIn", JSON.stringify(data));
+    isLogin = true;
+    localStorage.setItem("isLogin", JSON.stringify(isLogin));
     alert("SignIn Successfull");
-    }
-    else{
-        alert("Wrong email Or Password");
-        window.location.href="index.html"
-    }
-})
-function checkSignIn(email,password){
-    let filter = signupData.filter(function(element){
-        return element.email===email && element.password===password;
-    })
-    if(filter.length>0)
-    {
-        return true;
-    }
-    else {
-        return false;
-    }
+    window.location.href = "index.html";
+  } else {
+    alert("Wrong email Or Password");
+    // window.location.href = "index.html";
+  }
+});
+function checkSignIn(email, password) {
+  let filter = signupData.filter(function (element) {
+    return element.email == email && element.pass == password;
+  });
+  if (filter.length > 0) {
+    return true;
+  } else {
+    return false;
+  }
 }

@@ -86,8 +86,7 @@
 #pukmain>h4:nth-child(6) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #pukmain>input:nth-child(7) {
@@ -102,8 +101,7 @@
 #pukmain>h4:nth-child(8) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #pukmain>input:nth-child(9) {
@@ -117,8 +115,7 @@
 #pukmain>h4:nth-child(10) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #pukmain>input:nth-child(11) {
@@ -132,8 +129,7 @@
 #pukmain>h4:nth-child(12) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #pukmain>div:nth-child(13) {
@@ -154,15 +150,15 @@
 #pukmain>p:nth-child(14) {
     margin-left: 30px;
     width: 85%;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #pukmain>h4:nth-child(15) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #pukmain>div:nth-child(16)>input {
@@ -177,9 +173,9 @@
 #pukmain>span:nth-child(17) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
-}    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
+}
 
 #pukmain>input:nth-child(19) {
     margin-left: 30px;
@@ -192,8 +188,8 @@
 #pukmain>p:nth-child(20) {
     margin-left: 30px;
     margin-bottom: 10px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #pukmain>div:nth-child(21) {
@@ -243,14 +239,14 @@
     margin-left: 30px;
     margin-bottom: 10px;
     margin-bottom: 30px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #pukmain>span:last-child {
     margin-left: 30px;
-   font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #pukmain {
@@ -273,8 +269,8 @@
 #puklink>div:first-child>span {
     font-weight: bolder;
     padding-left: 20px;
-    font-family:inherit;
-    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 #fb,

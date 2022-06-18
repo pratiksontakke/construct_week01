@@ -1,15 +1,15 @@
-*{
+* {
     margin:0px;
     padding: 0px;
     font-family: sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-
 .NASinitial{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: baseline;
+      margin-top: 20px;
 }
 .NASinitial>button{
       padding: 10px 10px;

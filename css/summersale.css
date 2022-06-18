@@ -59,6 +59,7 @@
     }
 
     @media screen and (min-width:1001px) and (max-width:1424px) {
+        
         .temp {
             display:flex;
             width:100%;
@@ -71,6 +72,10 @@
             margin-top:15px;
             margin-left:20px;
         
+        }
+
+        #ro .img1, #row .img1, #rowe .img1 {
+            width: 100%;
         }
     
         .temp>div:first-child>img,.temp>div:nth-child(2)>img,.temp>div:nth-child(3)>img {
@@ -96,7 +101,7 @@
         }
     }
 
-    @media screen and (min-width:400px) and (max-width:1000px) {
+    @media screen and (min-width:300px) and (max-width:1000px) {
         .temp {
             width:100%;
             display:grid;
@@ -105,11 +110,12 @@
             justify-items:left;
             height:1850px;
             
+            
         }
         
         .temp>.img {
             width:50%;
-
+            margin:left;
         }
 
         .img>img {

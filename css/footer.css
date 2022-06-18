@@ -22,11 +22,12 @@
     font-weight: bold;
 }
 
-#NASupper-bottom>div>button {
+#NASupper-bottom>div>a>button {
     padding: 10px 20px;
     background-color: black;
     color: white;
     margin: 15px 0px;
+    cursor: pointer;
 }
 
 #NASsocial-media {

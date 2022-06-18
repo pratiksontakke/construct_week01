@@ -1,7 +1,10 @@
 #pukback {
     background-color: rgb(243, 241, 241);
 }
-
+#pukspace {
+    padding-top: 5%;
+    background-color: rgb(243, 241, 241);
+}
 
 #puklabel {
     margin-left: -8px;
@@ -11,7 +14,7 @@
     margin-bottom: px;
     background-color: white;
     width: 100%;
-    position: fixed;
+        margin-top: 200px;
 
 }
 

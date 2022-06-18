@@ -1,20 +1,21 @@
-*{
+* {
     margin:0px;
     padding: 0px;
     font-family: sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-
 .NASinitial{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: baseline;
+      margin-top: 20px;
 }
-.NASinitial>button{
+.NASinitial>a>button{
       padding: 10px 10px;
       background-color: black;
       color: white;
+      cursor: pointer;
 
 }
 
@@ -193,11 +194,12 @@ font-size: 20px;
     margin: auto;
     margin-top: 20px;
 }
-#NASshopping-checkout>div>button{
+#NASshopping-checkout>div>a>button{
     padding: 10px 20px;
     font-size: 20px;
+    cursor: pointer;
 }
-#NASshopping-checkout>div>button:last-child{
+#NASshopping-checkout>div> a >button:last-child{
    background-color: black;
    color: white;
 }

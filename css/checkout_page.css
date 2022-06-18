@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.amCheckoutDark {
+  background-color: #f2f2f2;
+}
+.requiredCheckout::before {
+    content:"* ";
+    color: red;
+}
+#amCheckout a {
+  color: (internal value);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#amCheckout a:visited {
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
+#amCheckout a:link:active {
+  color: (internal value);
+}
+#amCheckout a:visited:active {
+  color: (internal value);
+}
+
+#amCheckout {
+  width: 80%;
+  margin: 5% auto;
+  font-size: 18px;
+  /* background-color: #f2f2f2; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#amCheckout > div:nth-child(1) {
+  grid-area: 1/1/4/3;
+}
+#amCheckout > div:nth-child(2) {
+  grid-area: 1/3/2/4;
+}
+#amCheckout > div {
+  border: 1px solid red;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#amCheckout h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 550;
+  color: #494f55;
+}
+#amCheckout input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#amCheckout label {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+#amCheckout hr {
+  margin: 40px 0;
+  height: 2px;
+  background-color: #494f55;
+}
+/* #amCheckout>div>form>div>div>label {
+  font-size: 100px;
+  padding: 5px 0px 0px 0px;
+} */
+#amCheckout select {
+  width: 20%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+#amCheckout option {
+  font-size: 18px;
+  padding: 10px;
+}
+#amCheckout #amCardImg {
+  display: flex;
+}
+#amCheckout #amCardImg > div {
+  height: 40px;
+  width: 70px;
+  margin: 20px 10px;
+}
+#amCheckoutCard {
+  border: 3px solid #494f55;
+  border-radius: 15px;
+  padding: 20px;
+}
+#amCheckout #amCardImg > div > img {
+  height: 100%;
+  width: 100%;
+}
+#amCheckout .amCheckoutCardDate {
+  width: 43%;
+  margin-right: 50px;
+}
+#amCheckout .amCheckoutCenter {
+  text-align: center;
+  color: #494f55;
+}
+#amCheckout #amCheckoutBottom {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  margin: 15px 0px;
+  cursor: pointer;
+}
+
+#amCheckout>#amCard {
+  border: 1px solid black;
+  margin: 0 0 0 15px;
+  height: auto;
+  position: sticky;
+  top: 0px;
+  /* right: 0px; */
+  
+}
+#amCard > div {
+  display: flex;
+  margin-top: 50px;
+
+}
+#amCard > div > img {
+  width: 80px;
+  height: 60px;
+}
+#amCard > div > p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

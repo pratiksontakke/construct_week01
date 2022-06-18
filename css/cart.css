@@ -1,20 +1,21 @@
-*{
+* {
     margin:0px;
     padding: 0px;
     font-family: sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-
 .NASinitial{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: baseline;
+      margin-top: 20px;
 }
-.NASinitial>button{
+.NASinitial>a>button{
       padding: 10px 10px;
       background-color: black;
       color: white;
+      cursor: pointer;
 
 }
 
@@ -27,7 +28,7 @@
        background-color: rgb(181, 211, 237);
 }
 .NASnotifications img{
-      width: 20px;
+      width: 30px;
       border-radius: 50%;
       padding-right: 5px;
 }
@@ -35,6 +36,7 @@
       color: #F7A193;
       padding-left: 10px;
 }
+
 .NAScart{
        /* border: 1px solid red; */
        display: flex;
@@ -140,7 +142,7 @@ font-size: 20px;
 #NASgift-selection{
         display: flex;
         justify-content: space-between;
-        padding: 10px 50px;
+        padding: 10px 10px;
         background-color: #F2F2F2;
         margin: auto;
 }
@@ -149,12 +151,18 @@ font-size: 20px;
          border: none;
          font-weight: bold;
          font-size: 30px;
-         padding-top: 10px;
+    
 }
 
 #NASgift-line{
-     padding: 5px 15px;
+     padding: 10px 15px;
 
+}
+#NASqualified{
+    padding: 10px 15px;
+}
+#NASqualified p{
+    padding: 10px;
 }
 
 
@@ -186,11 +194,12 @@ font-size: 20px;
     margin: auto;
     margin-top: 20px;
 }
-#NASshopping-checkout>div>button{
+#NASshopping-checkout>div>a>button{
     padding: 10px 20px;
     font-size: 20px;
+    cursor: pointer;
 }
-#NASshopping-checkout>div>button:last-child{
+#NASshopping-checkout>div> a >button:last-child{
    background-color: black;
    color: white;
 }
@@ -207,3 +216,46 @@ font-size: 20px;
        border-radius: 5px;
        margin: 0px 5px;
 }
+
+
+
+@media  all and (min-width: 320px) and (max-width: 720px) {
+       .NAScart{
+         padding: 0px;
+       }  
+       td{
+          padding: 0px;
+          min-width: 30px;
+       }
+       td:first-child{
+          flex-wrap: wrap;
+       }
+
+       .left-cart{
+           padding: 0px;
+       }
+
+       .left-cart img {
+        width: 50px;
+      }
+      table{
+        width: 100%;
+      }
+      #NAScart-total {
+         padding-right: 0px;
+      }
+      #form {
+         display: block; 
+       }
+       #NASshopping-checkout>div {
+         padding: 10px; 
+      }
+      #NASshopping-checkout>div>button {
+      
+        font-size: 16px; 
+       }
+       #NASshopping-checkout>div:last-child {
+        flex-wrap: wrap;
+      }
+
+} 

@@ -10,6 +10,7 @@
 /* This is bottom css design of Index Page */
 #NASupper-bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     width: 100%;
@@ -19,10 +20,6 @@
 
 .NASbold {
     font-weight: bold;
-}
-
-#NASupper-bottom>div {
-    width: 50%;
 }
 
 #NASupper-bottom>div>button {
@@ -68,9 +65,11 @@
 #NASmiddle-bottom>div:nth-child(2) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #NASmiddle-bottom>div:nth-child(2)>div {
+    min-width: 150px;
     width: 30%;
 }
 
@@ -85,17 +84,27 @@
     background-color: transparent;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex>button{
+      border: none;
+      font-style: normal;
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+
+}
+
 
 #NASlower-bottom {
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: stretch;
     padding: 20px;
     margin-bottom: 30px;
-}
-
-#NASlower-bottom>div {
-    width: 50%;
 }
 
 #NASpayment-media {

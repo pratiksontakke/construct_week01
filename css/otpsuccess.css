@@ -1,0 +1,371 @@
+#card {
+    width: 40%;
+    /* height: 300px; */
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mark {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    background-color: #28282B;
+    border-radius: 100%;
+    margin: auto;
+    color: white;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+    word-spacing: 3px;
+}
+#mybtn {
+    text-decoration: none;
+}
+#ok {
+    color: white;
+    background-color: #28282B;
+    padding: 15px 10%;
+    /* height: 50px; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin: auto;
+    cursor: pointer;
+
+}
+#amCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+  }
+  #amCard > h4 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+  }
+  #amCard > div > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  #amCard .amCardBorder {
+    border: 0.1px solid rgba(73, 79, 85, 0.3);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #amCard #amCardImgRow > img {
+    width: 120px;
+    height: 100px;
+  }
+  #amCard #amCardImgRow > p {
+    display: flex;
+    text-align: right;
+    align-items: center;
+  }
+  #amCard hr {
+    height: 0.1px;
+    background-color: grey;
+  }
+  .amCardorder {
+    border: 1px solid rgba(73, 79, 85, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+
+
+/* card */
+/* card */
+/* card */
+
+
+
+  
+.left-cart{
+    /* border: 1px solid blue; */
+    flex-basis: 600px;
+    flex-grow: 1;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+}
+table{
+  border-width: 1px 0px 0px 0px;
+  border-color: rgb(179, 177, 177);
+  border-style: solid;
+  width: 100%;
+  text-align: left;
+}
+
+td{
+  border-width: 1px 0px 0px 0px;
+  border-color: rgb(177, 175, 175);
+  border-style: solid;
+  text-align: left;
+  
+}
+#form{
+  display: flex;
+  justify-content: center;
+
+}
+#form>input, #form>button{
+  border: 1px solid rgb(85, 83, 83);
+  padding: 20px 20px 20px 10px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+#form>input{
+  width: 250px;
+}
+#NASsavings{
+  margin: 20px;
+  color: green;
+}
+
+
+
+
+
+.left-cart img{
+   width: 100px;
+}
+td{
+  padding: 10px;
+  /* min-width: 120px; */
+}
+tr>td:first-child{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+tr>td:first-child>p{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.NASquantity{
+padding: 5px 8px;
+background-color: #c3bfbf;
+border: none;
+font-weight: bold;
+font-size: 20px;
+}
+#NAScart-total{
+  display: flex;
+  justify-content: right;
+  padding-right: 130px;
+}
+#NAScart-total>p{
+  margin: 20px;
+  font-size: 20px;
+}
+#NAScart-total>p:last-child{
+  font-weight: bold;
+}
+.right-cart{
+    margin: auto;
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: #F2F2F2;
+    margin-top: 0px;
+}
+
+
+#NASgift-selection{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px;
+      background-color: #F2F2F2;
+      margin: auto;
+}
+#NASgift-selection>button{
+       background-color: transparent;
+       border: none;
+       font-weight: bold;
+       font-size: 30px;
+  
+}
+
+#NASgift-line{
+   padding: 10px 15px;
+
+}
+#NASqualified{
+  padding: 10px 15px;
+}
+#NASqualified p{
+  padding: 10px;
+}
+
+
+.NASgift-options{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px;
+   background-color: white;
+   margin: 10px;
+}
+.NASgift-options>p{
+     flex-grow: 1;
+     padding: 0px 20px;
+}
+
+.NASgift-options>img:nth-child(3){
+      width: 20px;
+      border-radius: 50%;
+}
+
+
+
+#NASshopping-checkout>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+}
+#NASshopping-checkout>div>a>button{
+    color: white;
+    background-color: #28282B;
+    padding: 15px;
+    /* height: 50px; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+#NASshopping-checkout>div> a >button:last-child{
+ background-color: #28282B;
+ color: white;
+
+}
+#NASshopping-checkout>div:last-child{
+      display: flex;
+      justify-content: right;
+      padding: 0px 10px;
+}
+#NASshopping-checkout>div:last-child>img{
+     width: 80px;
+     height: 60px;
+     padding: 10px;
+     border: 1px solid rgb(147, 144, 144);
+     border-radius: 5px;
+     margin: 0px 5px;
+}
+
+@media  all and (min-width: 320px) and (max-width: 720px) {
+        .NAScart{
+          padding: 0px;
+        }  
+        td{
+           padding: 0px;
+           min-width: 30px;
+        }
+        td:first-child{
+           flex-wrap: wrap;
+        }
+ 
+        .left-cart{
+            padding: 0px;
+        }
+ 
+        .left-cart img {
+         width: 50px;
+       }
+       table{
+         width: 100%;
+       }
+       #NAScart-total {
+          padding-right: 0px;
+       }
+       #form {
+          display: block; 
+        }
+        #NASshopping-checkout>div {
+          padding: 10px; 
+       }
+       #NASshopping-checkout>div>button {
+       
+         font-size: 16px; 
+        }
+        #NASshopping-checkout>div:last-child {
+         flex-wrap: wrap;
+       }
+       #card {
+        width:80%;
+        /* height: 300px; */
+        border: 1px solid transparent;
+        margin: auto;
+        margin-top: 10%;
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: aliceblue;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #mark {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        background-color: #28282B;
+        border-radius: 100%;
+        margin: auto;
+        color: white;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 14px;
+        word-spacing: 2px;
+    }
+    #mybtn {
+        text-decoration: none;
+    }
+    #ok {
+        color: white;
+        background-color: #28282B;
+        padding: 15px 10%;
+        /* height: 50px; */
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin: auto;
+        cursor: pointer;
+    
+    }
+ 
+ }

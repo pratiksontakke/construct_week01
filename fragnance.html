@@ -1,738 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    * {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-/*sAyskant section */
-
-.prsFaintText {
-    color: #757575;
-}
-
-#prsAyskantMain {
-    margin: 10px;
-}
-
-#prsAyskant {
-    margin: auto;
-    width: 90%;
-}
-
-#prsAyskant a {
-    text-decoration: none;
-    color: #2e3337;
-}
-
-#prsAyskant>#prsCategory>div {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 15px;
-}
-
-#prsAyskant>#prsCategory>div>a>img {
-    width: 100%;
-    height: 100%;
-}
-.prsP {
-    font-family: 'Lato', sans-serif;
-    font-size: 36px;
-    line-height: 1.2;
-    color: #2e3337;
-    font-weight: 400;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    text-align: center;
-}
-
-
-#prsAyskant>#prsweekOffer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 15px;
-    justify-content: space-between;
-    /* margin-bottom: 400px; */
-}
-
-#prsAyskant>#prsweekOffer>a>div>img {
-    width: 100%;
-    margin: 0 0 20px 0;
-    /* height: 286px; */
-}
-
-#prsAyskant>#prsweekOffer>a>h3 {
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #2e3337;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-    /* margin-bottom: 40px; */
-}
-
-#prsAyskant>#prsweekOffer>a>h3+button {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #757575;
-    font-weight: 400;
-    padding: 8px 10px;
-    border: 1px solid red;
-    background-color: white;
-    margin: 0 0 15px 0;
-}
-
-
-#prsAyskant>#prsweekOffer>a>div>p:nth-child(1)>span {
-    text-decoration: line-through;
-    color: #757575;
-}
-#prsAyskant>#prsweekOffer>a>div>p:nth-child(1)>span {
-    text-decoration: line-through;
-    color: #757575;
-}
-#prsAyskant>#prsweekOffer>a>div>p+p {
-    font-size: 18px;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsweekOffer>a>div+button {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.2;
-    color: white;
-    font-weight: 400;
-    padding: 8px 10px;
-    background-color: #333;
-}
-
-#prsAyskant>#prsTrendingOffers {
-    font-family: 'Lato', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-#prsAyskant>#prsTrendingOffers>a>div>img {
-    height: 100%;
-    width: 100%;
-    border-radius: 500000px;
-    margin: 0 0 20px 0;
-}
-
-#prsAyskant>#prsTrendingOffers>a>div {
-    padding: 5px 20px;
-    font-size: 14px;
-}
-
-#prsAyskant>#prsTrendingOffers>a>div>h3 {
-    color: #333;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsTrendingOffers>a>div>div>button {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 15px 0 15px 0;
-}
-
-#prsAyskant>#prsTrendingNow {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 15px;
-}
-
-#prsAyskant>#prsTrendingNow>div>a>img {
-    width: 80%;
-    text-align: center;
-}
-
-/* left hand side card */
-#prsAyskant>#prsTrendingNow>div>div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: space-between;
-}
-
-
-#prsAyskant>#prsTrendingNow>div>div>a>div>img {
-    width: 100%;
-    margin: 0 0 20px 0;
-}
-
-#prsAyskant>#prsTrendingNow>div>div>a>h3 {
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #2e3337;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsTrendingNow>div>div>a>h3+button {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #757575;
-    font-weight: 400;
-    padding: 8px 10px;
-    border: 1px solid red;
-    background-color: white;
-    margin: 0 0 15px 0;
-}
-#prsAyskant>#prsTrendingNow>div>div>a>div>p:nth-child(1)>span {
-    text-decoration: line-through;
-    color: #757575;
-}
-#prsAyskant>#prsTrendingNow>div>div>a>div>p+p {
-    font-size: 18px;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsTrendingNow>div>div>a>div+button {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.2;
-    color: white;
-    font-weight: 400;
-    padding: 8px 10px;
-    background-color: #333;
-}
-
-#prsAyskant>#prsBuyingNow {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 30px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-
-#prsAyskant>#prsBuyingNow>a>div>img {
-    width: 100%;
-    margin: 0 0 20px 0;
-}
-
-#prsAyskant>#prsBuyingNow>a>h3 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #2e3337;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsBuyingNow>a>div>p {
-    font-size: 18px;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsBuyingNow>a>div+button {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.2;
-    color: white;
-    font-weight: 400;
-    padding: 8px 10px;
-    background-color: #333;
-}
-
-#prsAyskant>#prsbrandlogos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 30px;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 30px;
-    align-items: center;
-}
-
-#prsAyskant>#prsbrandlogos>a>img {
-    width: 100%;
-    display: flex;
-    align-content: center;
-}
-
-/* #prsTheBlog */
-
-#prsAyskant>#prsTheBlog {
-    font-family: 'Lato', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 10px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-#prsAyskant>#prsTheBlog>a>div>img {
-    height: 100%;
-    width: 100%;
-    border-radius: 500000px;
-    margin: 0 0 20px 0;
-}
-
-#prsAyskant>#prsTheBlog>a>div {
-    padding: 5px 20px;
-    font-size: 14px;
-}
-
-#prsAyskant>#prsTheBlog>a>div>h3 {
-    color: #333;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#prsTheBlog>a>div>div>button {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 15px 0 15px 0;
-}
-
-#prsAyskant>#prsbottomBanner>div>a>img {
-    width: 100%;
-    margin: 30px 0 60px 0;
-    max-width: 100%;
-}
-#prsAyskant>#proTheBlog {
-    font-family: 'Lato', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, auto);
-    gap: 10px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-#prsAyskant>#proTheBlog>a>div>img {
-    height: 100%;
-    width: 100%;
-    border-radius: 500000px;
-    margin: 0 0 20px 0;
-}
-
-#prsAyskant>#proTheBlog>a>div {
-    padding: 5px 20px;
-    font-size: 14px;
-}
-
-#prsAyskant>#proTheBlog>a>div>h3 {
-    color: #333;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-}
-
-#prsAyskant>#proTheBlog>a>div>div>button {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 400;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 15px 0 15px 0;
-}
-/* responsive */
-
-@media all and (min-width:480px) and (max-width:720px) {
-    #prsAyskantMain {
-        margin: 10px;
-    }
-
-    #prsAyskant {
-        margin: auto;
-        width: 95%;
-    }
-    #prsAyskant>#prsCategory>div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-    #prsAyskant>#prsweekOffer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-        margin: auto;
-        text-align: center;
-        /* margin-bottom: 400px; */
-    }
-    #prsAyskant>#prsweekOffer>a>div>img {
-        width: 80%;
-        margin: 0 0 20px 0;
-        /* height: 286px; */
-    }
-    #prsAyskant>#prsTrendingOffers {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-    #prsAyskant>#prsTrendingNow {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        text-align: center;
-    }
-    #prsAyskant>#prsTrendingNow>div>a>img {
-        text-align: left;
-        width: 95%;
-    }
-    #prsAyskant>#prsBuyingNow {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        justify-content: space-between;
-        text-align: center;
-    }
-    #prsAyskant>#prsbrandlogos {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        justify-content: space-between;
-        text-align: center;
-        margin-top: 30px;
-        align-items: center;
-    }
-    /* the prs/problog */
-    #prsAyskant>#prsTheBlog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-    #prsAyskant>#proTheBlog {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-
-    /* h3 center */
-    #prsAyskant>#prsweekOffer>a>h3 {
-        text-align: center;
-    }
-    #prsAyskant>#prsTrendingNow>div>div>a>h3 {
-        text-align: center;
-    }
-    /* #prsAyskant>#button1{
-        display: grid;
-        width: 100%;
-        height: 10px;
-        grid-template-columns: repeat(4,1fr);
-        gap: 20px;
-        border: solid red 1px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color:whitesmoke ;
-        justify-content: space-evenly;
-
-    }
-    #prsAyskant>#button1>Button{
-      width: 10%;
-      height: 100%;
-      background-color: grey;
-      color: black;
-    } */
-}
-
-@media all and (min-width:350px) and (max-width:479px) {
-    #prsAyskantMain {
-        margin: 10px;
-    }
-
-    #prsAyskant {
-        margin: auto;
-        width: 98%;
-    }
-
-    #prsAyskant>#prsCategory>div {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    #prsAyskant>#prsweekOffer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-        margin: auto;
-        text-align: center;
-        /* margin-bottom: 400px; */
-    }
-
-    #prsAyskant>#prsweekOffer>a>div>img {
-        width: 80%;
-        margin: 0 0 20px 0;
-        /* height: 286px; */
-    }
-
-    #prsAyskant>#prsTrendingOffers {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-
-    #prsAyskant>#prsTrendingNow {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        text-align: center;
-    }
-
-    #prsAyskant>#prsTrendingNow>div>a>img {
-        text-align: left;
-        width: 95%;
-    }
-
-    #prsAyskant>#prsBuyingNow {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    #prsAyskant>#prsbrandlogos {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3,auto);
-        gap: 30px;
-        justify-content: space-between;
-        text-align: center;
-        margin-top: 30px;
-        align-items: center;
-    }
-
-    #prsAyskant>#prsTheBlog {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-    #prsAyskant>#proTheBlog {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 10px;
-        text-align: center;
-        grid-auto-rows: 0;
-        overflow-y: hidden;
-    }
-    /* h3 center */
-    #prsAyskant>#prsweekOffer>a>h3 {
-        text-align: center;
-    }
-
-    #prsAyskant>#prsTrendingNow>div>div>a>h3 {
-        text-align: center;
-    }
-
-}
-#frag{
-    width: 100%;
-    height: 500px;
-}
-
-
-
-
-/*sAyskant section end! */
-</style>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragnance</title>
+  </head>
+  <link rel="stylesheet" href="./css/fragnance.css">
+  <body>
+    <div id="apeksha_amnavbar" include-html="./navbar.html">
+      <!-- navbar.html -->
+    </div>
     <div id="prsAyskantMain">
-        <div id="prsAyskant">
-          <div id="prsimgDiv" style="width: 100%">
-            <div id="prsimgSlider" include-html="./slider.html">
-              <!-- add image slider -->
-            </div>
+      <div id="prsAyskant">
+        <div id="prsimgDiv" style="width: 100%">
+          <div id="prsimgSlider" include-html="./slider.html">
+            <!-- add image slider -->
           </div>
-          <div id="prsCategory">
-            <p class="prsP">Fragnance</p>
-            <div>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/37/Page-001-043237.png"
-                  alt=""
-                />
-              </a>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/42/Page-002-043242.png"
-                  alt=""
-                />
-              </a>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/55/Page-003-043255.png"
-                  alt=""
-                />
-              </a>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/09/Page-004-043309.png"
-                  alt=""
-                />
-              </a>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/19/Page-005-043319.png"
-                  alt=""
-                />
-              </a>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/26/Page-006-043326.png"
-                  alt=""
-                />
-              </a>
-            </div>
+        </div>
+        <div id="prsCategory">
+          <p class="prsP">Fragnance</p>
+          <div>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/37/Page-001-043237.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/42/Page-002-043242.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/55/Page-003-043255.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/09/Page-004-043309.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/19/Page-005-043319.png"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/26/Page-006-043326.png"
+                alt=""
+              />
+            </a>
           </div>
-          
-            <div id="prsimgSlider" include-html="./slider.html">
-              <!-- add image slider -->
-            </div>
-          
+        </div>
 
-          
-          <!-- <hr> -->
-          <!-- <div id="button1">
+        <div id="prsimgSlider" include-html="./slider.html">
+          <!-- add image slider -->
+        </div>
+
+        <!-- <hr> -->
+        <!-- <div id="button1">
             <button>1</button>
             <button>2</button>
             <button>3</button>
             <button>4</button>
             
           </div> -->
-          <!-- <hr> -->
-         
-            <div id="proTheBlog">
-            <a href="">
+        <!-- <hr> -->
+
+        <div id="proTheBlog">
+          <a href="">
+            <div>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Molton_Brown_Square-103440.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>SkinCeuticals: Vitamin C Beyond the Face</h3>
+              <p class="prsFaintText">
+                Indulge in Molton Brown's luxurious range of body washes, body
+                lotions, candles and hand care.
+              </p>
               <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Molton_Brown_Square-103440.jpg"
-                  alt=""
-                />
+                <button class="prsFaintText">SHOP NOW</button>
               </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Molton_Brown_Square-103440.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Which TriPollar Device is Right for You?</h3>
+              <p class="prsFaintText">
+                fragrances are meant to capture feelings of attraction and
+                freedom
+              </p>
+
               <div>
-                <h3>SkinCeuticals: Vitamin C Beyond the Face</h3>
-                <p class="prsFaintText">
-                    Indulge in Molton Brown's luxurious range of body washes, body lotions, candles and hand care.
-                </p>
-                <div>
-                  <button class="prsFaintText">SHOP NOW</button>
-                </div>
+                <button class="prsFaintText">SHOP NOW</button>
               </div>
-            </a>
-            <a href="">
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/59/original-MicrosoftTeams-image-103459.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The HairStore at SkinStore: What Your</h3>
+              <p class="prsFaintText">
+                Indulge in Molton Brown's luxurious range of body washes, body
+                lotions, candles and hand care.
+              </p>
               <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Molton_Brown_Square-103440.jpg"
-                  alt=""
-                />
+                <button
+                  onmouseover="myScript"
+                  class="prsFaintText prswhitetHover"
+                >
+                  SHOP NOW
+                </button>
               </div>
-              <div>
-                <h3>Which TriPollar Device is Right for You?</h3>
-                <p class="prsFaintText">
-                    fragrances are meant to capture feelings of attraction and freedom
-                <div>
-                  <button class="prsFaintText">SHOP NOW</button>
-                </div>
-              </div>
-            </a>
-            <a href="">
-              <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/59/original-MicrosoftTeams-image-103459.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h3>The HairStore at SkinStore: What Your</h3>
-                <p class="prsFaintText">
-                    Indulge in Molton Brown's luxurious range of body washes, body lotions, candles and hand care.
-                </p>
-                <div>
-                  <button
-                    onmouseover="myScript"
-                    class="prsFaintText prswhitetHover"
-                  >
-                    SHOP NOW
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-          <!-- <hr> -->
-          <!-- <p class="prsP">Offers of the Week</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- <hr> -->
+        <!-- <p class="prsP">Offers of the Week</p>
           <div id="prsweekOffer"></div> -->
-          <p class="prsP">New & Trending </p>
-          <!-- <hr> -->
-          <div id="prsTrendingOffers"></div>
-          <!-- <p class="prsP">Trending Now</p> -->
-          <div id="prsTrendingNow">
-            <!-- <div>
+        <p class="prsP">New & Trending</p>
+        <!-- <hr> -->
+        <div id="prsTrendingOffers"></div>
+        <!-- <p class="prsP">Trending Now</p> -->
+        <div id="prsTrendingNow">
+          <!-- <div>
               <a href="">
                 <img
                   src="https://static.thcdn.com/images/medium/webp/widgets/121-us/09/4P-Goop-with-bottle-and-bubbles-600x600-100209.jpg"
@@ -740,11 +153,11 @@ body {
                 />
               </a>
             </div> -->
-            <div>
-              <div id="prsTrendingNowRight"></div>
-            </div>
+          <div>
+            <div id="prsTrendingNowRight"></div>
           </div>
-          <!-- <p style="margin-top: 40px" class="prsP">
+        </div>
+        <!-- <p style="margin-top: 40px" class="prsP">
             What People Are Buying Right Now
           </p>
           <div id="prsBuyingNow"></div>
@@ -786,85 +199,88 @@ body {
               />
             </a>
           </div> -->
-          <!-- <p class="prsP">Over On the Blog...</p> -->
-          <div id="prsTheBlog">
-            <a href="">
-              <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/skinstore_newsletter_580x348_02_%281%29-065023-094340.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h3>SkinCeuticals: Vitamin C Beyond the Face</h3>
-                <p class="prsFaintText">
-                  In 2008, TriPollar launched themselves into the home beauty
-                  sphere with an aim to innovate the technology behind at-home
-                  treatments and devices.
-                </p>
-                <div>
-                  <button class="prsFaintText">READ MORE</button>
-                </div>
-              </div>
-            </a>
-            <a href="">
-              <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/43/original-Shop_the_Range_-_Image_1_-_Signature_Collection_500x500-071840-094943.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h3>Which TriPollar Device is Right for You?</h3>
-                <p class="prsFaintText">
-                  In 2008, TriPollar launched themselves into the home beauty
-                  sphere with an aim to innovate the technology behind at-home
-                  treatments and devices.
-                </p>
-                <div>
-                  <button class="prsFaintText">READ MORE</button>
-                </div>
-              </div>
-            </a>
-            <a href="">
-              <div>
-                <img
-                  src="https://static.thcdn.com/images/small/webp/widgets/121-us/43/original-Webp.net-resizeimage_-_2021-02-09T164836.851-094843.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h3>The HairStore at SkinStore: What Your</h3>
-                <p class="prsFaintText">
-                  In 2008, TriPollar launched themselves into the home beauty
-                  sphere with an aim to innovate the technology behind at-home
-                  treatments and devices.
-                </p>
-                <div>
-                  <button
-                    onmouseover="myScript"
-                    class="prsFaintText prswhitetHover"
-                  >
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div id="prsbottomBanner">
+        <!-- <p class="prsP">Over On the Blog...</p> -->
+        <div id="prsTheBlog">
+          <a href="">
             <div>
-              <a href="">
-                <img
-                  src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg"
-                  alt=""
-                />
-              </a>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/skinstore_newsletter_580x348_02_%281%29-065023-094340.jpg"
+                alt=""
+              />
             </div>
+            <div>
+              <h3>SkinCeuticals: Vitamin C Beyond the Face</h3>
+              <p class="prsFaintText">
+                In 2008, TriPollar launched themselves into the home beauty
+                sphere with an aim to innovate the technology behind at-home
+                treatments and devices.
+              </p>
+              <div>
+                <button class="prsFaintText">READ MORE</button>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/43/original-Shop_the_Range_-_Image_1_-_Signature_Collection_500x500-071840-094943.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Which TriPollar Device is Right for You?</h3>
+              <p class="prsFaintText">
+                In 2008, TriPollar launched themselves into the home beauty
+                sphere with an aim to innovate the technology behind at-home
+                treatments and devices.
+              </p>
+              <div>
+                <button class="prsFaintText">READ MORE</button>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <img
+                src="https://static.thcdn.com/images/small/webp/widgets/121-us/43/original-Webp.net-resizeimage_-_2021-02-09T164836.851-094843.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The HairStore at SkinStore: What Your</h3>
+              <p class="prsFaintText">
+                In 2008, TriPollar launched themselves into the home beauty
+                sphere with an aim to innovate the technology behind at-home
+                treatments and devices.
+              </p>
+              <div>
+                <button
+                  onmouseover="myScript"
+                  class="prsFaintText prswhitetHover"
+                >
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="prsbottomBanner">
+          <div>
+            <a href="">
+              <img
+                src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg"
+                alt=""
+              />
+            </a>
           </div>
         </div>
       </div>
-      
-</body>
+    </div>
+    <div id="NASbottomNavbar" include-html="./footer.html">
+      <!-- Narendra starting 
+        this is bottom page design -->
+    </div>
+  </body>
 </html>
 <script src="./js/sub_js/jquery-3.6.0.min.js"></script>
 <script src="./js/sub_js/include-html.min.js"></script>

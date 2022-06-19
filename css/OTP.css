@@ -1,0 +1,88 @@
+p {
+  font-size: 16px;
+}
+h3 {
+  font-size: 18px;
+  color: #28282B;
+  text-decoration: underline;
+}
+#card > h3 {
+  text-decoration: none;
+}
+
+#container {
+  width: 50%;
+  border: 1px solid transparent;
+  padding: 20px;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: aliceblue;
+}
+
+#card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid transparent;
+}
+#card > input {
+  margin: 6px auto 40px auto;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 5px 10px;
+  height: 40px;
+  border-radius: 10px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+#resend {
+  color: black;
+  background-color: #d9e3ed;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+#varify {
+  color: white;
+  background-color: #28282B;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media all and (min-width: 480px) and (max-width: 720px) {
+  #container {
+    width: 80%;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aliceblue;
+  }
+}
+@media all and (min-width: 350px) and (max-width: 479px) {
+    #container {
+        width: 90%;
+        border: 1px solid transparent;
+        padding: 20px;
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: aliceblue;
+      }
+}
+

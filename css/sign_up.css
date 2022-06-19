@@ -77,8 +77,13 @@
     margin: 40px 45px 35px 30px;
 }
 
+#pukmain>h2:nth-child(2) {
+    margin-bottom:20px;
+}
+
 #pukmain>h2:nth-child(5) {
     margin-left: 30px;
+    margin-bottom:20px;
     margin-top: -5px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -91,6 +96,8 @@
 
 #pukmain>input:nth-child(7) {
     margin-left: 30px;
+    margin-bottom:10px;
+    padding-left:15px;
     width: 85%;
     height: 40px;
     border: 1px solid rgb(190, 188, 188);
@@ -106,6 +113,8 @@
 
 #pukmain>input:nth-child(9) {
     margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left:15px;
     width: 85%;
     height: 40px;
     border: 1px solid rgb(190, 188, 188);
@@ -120,6 +129,8 @@
 
 #pukmain>input:nth-child(11) {
     margin-left: 30px;
+    margin-bottom:10px;
+    padding-left:15px;
     width: 85%;
     height: 40px;
     border: 1px solid rgb(190, 188, 188);
@@ -139,6 +150,7 @@
 
 #pukmain>div:nth-child(13)>input {
     margin-left: 30px;
+    padding-left:15px;
     width: 100%;
     margin-left: 0px;
     height: 40px;
@@ -163,6 +175,7 @@
 
 #pukmain>div:nth-child(16)>input {
     margin-left: 30px;
+    padding-left:15px;
     width: 85%;
     margin-bottom: 30px;
     height: 40px;
@@ -179,6 +192,7 @@
 
 #pukmain>input:nth-child(19) {
     margin-left: 30px;
+    padding-left:15px;
     width: 85%;
     height: 40px;
     border: 1px solid rgb(190, 188, 188);
@@ -207,6 +221,7 @@
 
 #pukmain>div:nth-child(21)>input {
     margin-top: 20px;
+    padding-left:15px;
     width: 90%;
     height: 40px;
     border: 1px solid rgb(190, 188, 188);

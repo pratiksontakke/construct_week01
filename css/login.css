@@ -18,7 +18,11 @@ grid-area: nav;
 
   
 }
-
+label {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 .skin-store_logo img{
     width: 500px;
     height: 60px;
